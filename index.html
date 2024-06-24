@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blaze</title>
+</head>
+<body>
+    <div class="header">
+        <div class="text" >
+            <h1>BLAZE</h1>
+        </div>
+    </div>
+    <div class="arrow_up" onclick="click_menu()" id="menuConteinerId">
+        <img src="image/image_site/up-chevron_9144317-Photoroom.png" alt="">
+    </div>
+    <div class="width-conteiner">
+        <div class="parser-conteiner" id="parserConteinerId">
+            <div class="name-hot-dish">
+                <h1>Меню</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-menu-conteiner">
+        <div class="scroll-menu">
+            <div class="dish-parser">
+                <div class="hot-dish" onclick="click_hot_dish()">
+                    <img src="image/image_site/soup_209758.png" alt="">
+                </div>
+                <div class="dessert" onclick="click_dessert()">
+                    <img src="image/image_site/cake_7391952.png" alt="">
+                </div>
+                <div class="hot-drink" onclick="click_hot_drink()">
+                    <img src="image/image_site/coffee-cup_7392219-2.png" alt="">
+                </div>
+                <div class="cold-drink" onclick="click_cold_drink()">
+                    <img src="image/image_site/chocolate_7392212.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="width">
+        <div class="menu_special_offer" id="special-list"></div>
+        <div class="dish-drink-container" id="dish-cont"></div>
+        <div class="dish-dessert" id="dessert-cont"></div>
+        <div class="drink-cold-container-menu" id="drink-cont"></div>
+        <div class="tea-coffee-container">
+            <ul id="tea-list"></ul>
+            <ul id="coffee-list"></ul>
+        </div>
+        <div class="supplements-container" id="supp-cont">
+        </div>
+        <script src="js/card.js"></script>
+        <script src="js/menu_data.js"></script>
+        <script src="js/like.js"></script>
+        <script src="js/click_dish.js"></script>
+        <script src="js/function_menu.js"></script>
+        <script src="js/name_container.js"></script>
+        <script src="js/tea_coffee_conteiner_func.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>

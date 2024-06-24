@@ -1,0 +1,466 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: #dadadac9;
+}
+ul {
+    list-style-type: none;
+}
+.header, .arrow_up {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(187, 187, 187);
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 20;
+  }
+.arrow_up {
+    display: none;
+    justify-content: center;
+    top: 90%;
+    left: 80%;
+    width: 65px;
+    height: 50px;
+    opacity: 0;
+    border-radius: 20px;
+    background-color:#909090c9;
+    z-index: 20;
+    transition: opacity 2s ease;
+}
+.arrow_up img {
+    opacity: 0.7;
+}
+.header .text {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .text h1 {
+    margin: 0;
+    height: 60px;
+    font-size: 60px;
+    text-align: center;
+}
+.width-conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.scroll-menu-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.parser {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 572px;
+    height: 350px;
+    z-index: 1;
+}
+.scroll-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 430px;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+.name-hot-dish {
+    width: auto;
+    padding: 0;
+    /* text-align: center; */
+    position: absolute;
+    top: 430px;
+    left: 60px;
+}
+.name-hot-dish h1{
+    color: rgb(76 76 76);
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 34px;
+}
+.hot-dish, .cold-dish, .dessert, .hot-drink, .cold-drink {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    background-color: #d0d0d0c9;
+    cursor: pointer;
+}
+.hot-dish:hover, .cold-dish:hover, .dessert:hover, .hot-drink:hover, .cold-drink:hover{
+    background-color: #abababc9;
+}
+.hot-dish img, .cold-dish img, .dessert img, .hot-drink img, .cold-drink img {
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+}
+.width, .parser-conteiner, .tea-coffee-container {
+    margin: 70px 0 0 0;
+    display: flex;
+    color: rgb(76 76 76);
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    align-content: space-around;
+}
+.dish-drink-container, .tea-coffee-container, .menu_special_offer, .drink-cold-container-menu {
+    margin: 0;
+    width: 370px;
+}
+.menu_special_offer, .dish-drink-container, .drink-cold-container-menu, .dish-dessert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tea-conteiner, .coffee-conteiners {
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#tea-list , #coffee-list{
+    width: 430px;
+    padding: 0 20px;
+}
+.parser-conteiner {
+    width: 430px;
+    background-image: url(./../image/667312213dbea_1718817316_667312213dbe1-pdf-2.png);
+    background-size: 400px 600px;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    margin-top: 70px;
+}
+.dish-1 {
+    width: 360px;
+    margin: 150px 0 40px 0;
+    display: block;
+    position: relative;
+    
+}
+.dish-parser{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    align-content: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.photo {
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-size: 100% 150px;
+}
+.photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-top: -65px;
+    border: 5px solid rgb(153, 153, 153);
+}
+.description {
+    background-color: rgb(187, 187, 187);
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.sause-container, .desset-conteiner, .hot-dish-container, .drink-hot-container, .cold-dish-container, .supplements-name-container, .name-special-offer, .drink-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 22px;;
+    color: rgb(76 76 76);
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.name-special-offer {
+    margin: 0 0 40px 0;
+}
+.drink-hot-container, .supplements-name-container {
+    margin: 0;
+}
+.drink-container hr, .sause-container hr, .desset-conteiner hr, .hot-dish-container hr, .drink-hot-container hr, .cold-dish-container hr, .supplements-name-container hr, .name-special-offer hr{
+    border: 0;
+    background-color: rgb(76 76 76);
+    height: 4px;
+}
+.supplements-container-width {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.supplements-container-width .name h2 {
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+.supplements {
+    width: 90%;
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(187, 187, 187);
+}
+.name-supplements {
+    display: flex;
+    justify-content: space-between;
+}
+.supplements hr {
+    margin: 0;
+    padding: 0 20px;
+}
+.name-supplements h3 {
+    padding: 0 0 0 20px;
+}
+.name-supplements p {
+    padding: 0 20px 0 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.description .like {
+    display: flex;
+    padding: 0 0 0 30px;
+    justify-content: flex-start; /* Добавлено для выравнивания в левом краю */
+}
+
+.description .like .photo {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; 
+    background-color: #838383c9;
+    border-radius: 30%;
+    border: 0;
+}
+.photo svg {
+    width: 35px;
+    height: 35px;
+}
+.photo svg path{
+    width: 45px;
+    height: 45px;
+    fill: white; /* Исходный цвет */
+    transition: fill 0.7s; /* Плавный переход для свойства fill */
+    cursor: pointer;
+}
+/* .photo svg path:hover{
+    fill: #e00000; /* Цвет после нажатия 
+} */
+.photo .clicked path{
+    fill: #e00000; /* Цвет после нажатия */
+}
+.description .text .like .menu{
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+}
+.description .text .like .menu p{
+    font-size: 28px;
+    margin: 0 0 0 10px;
+}
+.description .text {
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.description .text .name {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.description .text .name h1, .description-sause .text .name h1 {
+    padding: 0;
+    color: #000000c9;
+    margin: 20px;
+    font-weight:bolder;
+}
+.description .text .name p{
+    width: 100%;
+    align-self: center;
+    top: 55%;
+}
+.description .text .name_company_blaze{
+    position: absolute;
+    transform: rotate(90deg);
+    color: white;
+    -webkit-text-stroke: 0;
+    font-size: 24px;
+    left: 92%;
+    top: 28%;
+}
+.description .text .name_company_blaze {
+    position: relative;
+    display: inline-block;
+}
+ .description .text .name_company_blaze::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: top left;
+ }
+.description .text .description_dish {
+    text-align: center;
+    font-size: 24px;
+}
+.description .text .description_dish h2 {
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0 15px;
+    color: #000000c9;
+}
+.description .text .description_dish p {
+    top: 70%;
+    width: 100%;
+    align-self: center;
+    font-size: 16px;
+}
+.sum_and_gram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    text-align: center;
+    
+}
+.tea-conteiner, .coffee-conteiner{
+    display: flex;
+    margin: 20px 0;
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+    flex-direction: column;
+}
+.tea-coffee-container {
+    display: flex;
+    flex-direction: row;
+}
+.tea-name-container, .coffee-name-container, .name_special{
+    width: 80%;
+}
+.tea-name-container h2, .coffee-name-container h2, .name_special h2 {
+    margin: 50px 0 0 0;
+    font-size: 34px;
+    padding: 0 0 0 40px;
+}
+.tea-name-container hr, .coffee-name-container hr, .name_special hr{
+    padding:0;
+    margin: 0;
+}
+.tea-conteiner .name h1, .coffee-conteiner .name h1{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0 0 10px;
+    margin: 10px;
+}
+.sum_and_gram .ml p, .coffee-conteiner .sum_and_gram .ml p{
+    font-size: 22px;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+.sum_and_gram .sum p, .coffee-conteiner .sum_and_gram .sum p{
+    font-size: 22px;
+    align-self: flex-end;
+    font-weight: 610;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.tea-contei.sum_and_gram p{
+    margin: 0;
+    font-size: 22px;
+    
+}
+.description .text .sum_and_gram .gram {
+    display: flex;
+    padding: 0 8px;
+}
+.description .text .sum_and_gram .sum {
+    display: flex;
+    padding: 0 8px;
+}
+.description .text .sum_and_gram .table {
+    display: flex;
+}
+.description .text .sum_and_gram .gram p{
+    align-self: flex-end; 
+    font-size: 24px;
+    font-weight: 410;
+    color: #000000c9;
+    margin: 0;
+}
+.description .text .sum_and_gram .table p{
+    align-self: flex-end; 
+    font-size: 24px;
+    margin: 0;
+}
+.description .text .sum_and_gram .sum p{
+    align-self: flex-end; 
+    font-size: 24px;
+    font-weight: 510;
+    color: #000000c9;
+    margin: 0;
+}
+.description .text .line_right{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0 40%;
+    left: 300px;
+    top: 8px;
+}
+.description .text .line_left{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 40% 0;
+    left: 8px;
+    top: 8px;
+}
